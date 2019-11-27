@@ -17,13 +17,25 @@ class DotaKillAnnouncer extends StatelessWidget {
         onPressed: () {
           playSound(fileName);
         },
-        child: Text(
-          killName,
-          style: TextStyle(
-            fontFamily: 'Creepster',
-            fontSize: 25.0,
-            color: Colors.white,
-          ),
+        child: Row(
+          children: <Widget>[
+            Icon(
+              Icons.play_arrow,
+              size: 35.0,
+              color: Colors.white70,
+            ),
+            SizedBox(
+              width: 10.0,
+            ),
+            Text(
+              killName,
+              style: TextStyle(
+                fontFamily: 'Creepster',
+                fontSize: 25.0,
+                color: Colors.white,
+              ),
+            ),
+          ],
         ),
       ),
     );
